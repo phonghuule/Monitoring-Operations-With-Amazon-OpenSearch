@@ -277,6 +277,3 @@ This section explains how to delete resources created in this workshop. **Do not
 6. Click **[Federated identity]** in the top left, and choose **[KinesisDataGeneratorUsers]**. Display the menu of [Deleting an ID pool] below, click **[Deleting an ID pool]** button, and then click **[Deleting a pool]** to confirm the deletion.
 
 This completes the cleanup.
-
-## Survey
-Please help us to provide your feedback [here](https://amazonmr.au1.qualtrics.com/jfe/form/SV_3a6rNirgLrWYRW6?Session=HOL07). Participants who complete the surveys from AWS Innovate Online Conference - Data Edition will receive a gift code for USD25 in AWS credits. AWS credits will be sent via email by 30 September, 2021.
