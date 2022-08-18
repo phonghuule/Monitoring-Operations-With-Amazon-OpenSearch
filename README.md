@@ -68,7 +68,7 @@ You have created the Amazon OS domain and the Firehose stream to insert logs int
 
 ### Creating an Amazon OS Role
 
-1. Go to **[Amazon OS]** from [Service] in the top left of the AWS Management Console.
+1. Go to **[Amazon OS](https://us-east-1.console.aws.amazon.com/esv3/home?region=us-east-1#opensearch/dashboard)** from [Service] in the top left of the AWS Management Console.
 1. Click **[workshop-osdomain]** you have created in the above on the Amazon OS dashboard.　When the domain details are displayed, click on the **"OpenSearch Dashboard"**.　The login screen for OpenSearch Dashboard is displayed, so that enter the master user and the master password specified in the Section 1.
 1. Choose **[Explore on my own]** after logging in. Then, choose **[Private]** and click **[Confirm]** on **[Select your tenant]** screen.
 1. Then, click ![OpenSearch Dashboards_hamburger](images/kibana_hamburger.png) icon on the left side of the screen and choose **[Security]** menu.
@@ -83,7 +83,8 @@ You have created the Amazon OS domain and the Firehose stream to insert logs int
 
 ### Mapping Roles with IAM Roles
 
-1. Go to **[Kinesis](https://console.aws.amazon.com/kinesis/home?region=us-east-1#/dashboard)** page from [Services] on the top left of the AWS Management Console.　Open **"Delivery Stream"** on the left side menu, choose **[workshop-firehose]** you have created in this Lab.　On the stream details screen, click the link **[KinesisFirehoseServiceRole-XXX...]** displayed in **"IAM role"**.
+1. Go to **[Kinesis](https://console.aws.amazon.com/kinesis/home?region=us-east-1#/dashboard)** page from [Services] on the top left of the AWS Management Console.　Open **"Delivery Stream"** on the left side menu, choose **[workshop-firehose]** you have created in this Lab.　
+On the stream details screen, under **Configuration - Permissions** click the link **[KinesisFirehoseServiceRole-XXX...]** displayed in **"IAM role"**.
 1. In the IAM management console, click **"arn:aws:iam::123456789012:role/KinesisFirehoseServiceRole-XXX..."** to the right of **"Role ARN"**. (this value is different individually, so that make sure it on the screen and then copy it) This is the IAM role that manages permissions to AWS resources for Firehose.
 1. Go back to the management screen for OpenSearch Dashboard. Next, click ![kibana_hamburger](images/kibana_hamburger.png) icon on the left side of the screen and choose **[Security]** menu. Then, choose **[Roles]** from the left side menu to go to the role list screen.
 1. Choose **"workshop_firehose_delivery_role"** from **"Roles"**.
@@ -258,12 +259,12 @@ This section explains how to delete resources created in this workshop. **Do not
 
 ### Amazon OS
 
-1. Click [Services] in the top left of the AWS Management Console to display the list of services, and choose **[OpenSearch Service]**.
-2. Once displayed, choose **"workshop-esdomain"** in the list, and click **[Deleting a domain]** of **[Action]** button. When the pop-up menu is displayed, check the check-box, and click **[Delete]**.
+1. Navigate to **[OpenSearch Service](https://us-east-1.console.aws.amazon.com/esv3/home?region=us-east-1#opensearch/dashboard)**.
+2. Once displayed, choose **"workshop-osdomain"** in the list, and click **[Deleting a domain]** of **[Action]** button. When the pop-up menu is displayed, check the check-box, and click **[Delete]**.
 
 ### Firehose
 
-1. Click [Services] in the top left of the AWS Management Console to display the list of services, and choose **[Kinesis]**.
+1. Navigate to **[Kinesis Service](https://us-east-1.console.aws.amazon.com/kinesis/home?region=us-east-1)**.
 2. Choose **"workshop-firehose"** in the Kinesis Firehose delivery stream, and click **[Delete delivery stream]** button. When the pup-up menu is displayed, click **[Delete delivery stream]** to confirm the deletion.
 3. Delete the S3 bucket for storing the records that failed in inserting them into Amazon OS. Click [Services] in the top left of the AWS Management Console to display the list of services, and choose **[S3]**.
 4. Check the check-box of **"workshop-firehose-backup-YYYYMMDD-YOURNAME"** from the S3 bucket list, and click **[Delete]** button n the menu at the top. After entering the bucket name in the pop-up menu, click **[Confirm]** to confirm the deletion.
