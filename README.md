@@ -282,8 +282,10 @@ This completes the cleanup.
 
 ## Conclusion
 Throughout the lab, you've learnt how to build a real-time dashboard and perform a full-text search using Amazon OpenSearch and related AWS services.
+
 [Operational Analytics](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/operational-analytics.html) is one of the scenarios in the [Well-Architected Framework Data Analytics Lens](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html)
-We highly recommend you to deep dive the Well-Architected Data Analytics Lens(https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html) to understand the pros and cons of decisions while building analytics systems and workloads on AWS.
+
+We highly recommend you to deep dive the [Well-Architected Data Analytics Lens](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html) to understand the pros and cons of decisions while building analytics systems and workloads on AWS.
 
 ## Survey
 Let us know what you thought of this lab and how we can improve the experience for you in the future by completing [this poll](https://amazonmr.au1.qualtrics.com/jfe/form/SV_6G1rmmzxUkIajTo?Session=HOL007). Participants who complete the surveys from AWS Innovate Online Conference will receive a gift code for USD25 in AWS credits 1, 2 & 3. AWS credits will be sent via email by September 30, 2022.
